@@ -1,23 +1,21 @@
-import {createContext, useState, ReactNode} from 'react';
+import { createContext, useState, ReactNode } from "react";
 
-export const ChallengesContext = createContext({})
+export const ChallengesContext = createContext({});
 
-interface ChallengesProviderProps{
-    children: ReactNode;
+interface ChallengesProviderProps {
+  children: ReactNode;
 }
 
 export function ChallengesProvider({ children }: ChallengesProviderProps) {
+  const [level, setLevel] = useState(1);
 
-    const [level, setLevel] = useState(1);
+  function levelUp() {
+    setLevel(level + 1);
+  }
 
-    function levelUp() {
-      setLevel(level + 1);
-    }
-
-
-    return (
-    <ChallengesContext.Provider value={{level, levelUp}}>
-        {children}
+  return (
+    <ChallengesContext.Provider value={{ level, levelUp }}>
+      {children}
     </ChallengesContext.Provider>
-    );
+  );
 }
