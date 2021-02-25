@@ -1,4 +1,4 @@
-.ChallengeBoxContainer {
+.challengeBoxContainer {
    height: 100%;
    border-radius: 5px;
    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
@@ -13,19 +13,19 @@
    
 }
 
-.ChallengeNotActive {
+.challengeNotActive {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.ChallengeNotActive strong {
+.challengeNotActive strong {
     font-size: 1.5rem;
     font-weight: 500;  
     line-height: 1.4; 
 }
 
-.ChallengeNotActive p {
+.challengeNotActive p {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,18 +34,18 @@
     margin-top: 3rem;
 }
 
-.ChallengeNotActive p img {
+.challengeNotActive p img {
     margin-bottom: 1rem;
 }
 
-.ChallengeActive  {
+.challengeActive  {
     height: 100%;
 
     display: flex;
     flex-direction: column;
 }
 
-.ChallengeActive header {
+.challengeActive header {
     color: var(--blue);
     font-weight: 600;
     font-size: 1.25rem;
